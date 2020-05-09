@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        .holder {
+            width: 1000px;
+            height: 200px;
+            background-color: darkmagenta;
+            display: flex;
+        }
+        
+        .box {
+            width: 50%;
+            height: auto;
+            margin: 10px;
+        }
+        
+        input[type="checkbox"] {
+            width: 100px;
+            height: 30px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="holder">
+        <div class="box" style="background-color: darkorange;">
+            <input type="checkbox" id="checkbox1">
+        </div>
+        <div class="box" style="background-color:deepskyblue;">
+            <input type="checkbox" id="checkbox2">
+        </div>
+    </div>
+    <div class="holder">
+        <div class="box" style="background-color:cornflowerblue;">
+            <input type="checkbox" id="checkbox3">
+        </div>
+        <div class="box" style="background-color:darkgrey;">
+            <input type="checkbox" id="checkbox4">
+        </div>
+    </div>
+    <script>
+        function checked(checkBoxNumber) {
+            for (var i = 1; i <= 4; i++) {
+                if (checkBoxNumber == i) continue;
+                document.getElementById('checkbox' + i).checked = false;
+            }
+        }
+
+        console.log("hey this is my first javascript task");
+        var checkBox1 = document.getElementById('checkbox1')
+        checkBox1.addEventListener('click', function() {
+
+            check1 = 1;
+            checked(check1);
+
+        });
+        var checkBox2 = document.getElementById('checkbox2')
+        checkBox2.addEventListener('click', function() {
+
+            check2 = 2;
+            checked(check2);
+
+        });
+        var checkBox3 = document.getElementById('checkbox3')
+        checkBox3.addEventListener('click', function() {
+
+            check3 = 3;
+            checked(check3);
+
+        });
+        var checkBox4 = document.getElementById('checkbox4')
+        checkBox4.addEventListener('click', function() {
+
+            check4 = 4;
+            checked(check4);
+
+        });
+    </script>
+</body>
+
+</html>

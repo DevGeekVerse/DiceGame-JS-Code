@@ -1,0 +1,304 @@
+1. Javascript is object-oriented , cross-platform, light-weight(doesn't eat up much memory, simple features and simple syntax).
+
+2. javascript can be used Client-side and server-side.
+
+3. dynamic effects and interactivity.
+
+4. Frameworks of JS are React, angular and jquery.
+
+5. html - content, Css - styling and representation of elements,
+js - dynamic effects.
+
+6. var is keyword to declare variables.
+
+7. Five DATA TYPES In JavaScript : Number - Floating point numbers, for decimals and integers
+
+String - sequence of characters, used for text.
+
+Boolean - Logical data type that can only be true or false.
+
+Undefined - Data type of a variable that does not have a value yet.
+
+Null - Also means 'non-existent'.
+
+8. JavaScript has dynamic typing: data types are automatically assigned to variables.
+
+9. Basic operators: Math operators (+,-,*,/,%),
+Logical operators(>,<,>=,<=),
+typeof Operator(-> ex: console.log(typeof variableName)).
+
+10. if-else statements,
+ternary operators, switch statements.
+
+11. falsy values: undefined, null, 0, '', NaN.
+
+12. truthy values: NOT falsy values.
+
+13. function statements:
+function whatDoYouDo(job, firstName){
+	
+}.
+
+14. Function expression
+var whatDoYouDo = function(job, firstName){
+	
+}.
+
+15. arrays :
+
+var years = new Array('Hemanth',1990, 1969, 1948);
+
+
+arrays are 0 based.
+
+mutation means change.
+
+//push method is used to add element to end of an array.
+years.push('blue');
+
+//unshift method is used to add
+element at begining of an array.
+years.unshift('Mr.')
+
+//pop method is used to remove
+element from end of an array
+years.pop();
+
+//shift method is used to remove
+elements from begining of an array.
+years.shift();
+
+//indexOf method is used to know
+position of particular element.
+years.indexOf(1990);
+
+
+16. Objects and properties.
+
+key - value pairs.
+
+-> we can put different types of datatypes and arrays in Object.
+
+//below is the John object.
+var john = {
+	firstName: 'John',
+	birthYear: 1990,
+	family: ['Jane', 'Mark'],
+	job: 'designer',
+	isMarried: false
+};
+
+we can access object using . operator.
+
+example:
+console.log(john.firstName);
+console.log(john['birthYear']);
+
+mutation of objects:
+john.job = 'teacher';
+john['isMarried'] = true;
+
+
+// new object syntax
+var jane = new Object();
+jane.firstName = 'jane';
+jane.birthYear = 1992;
+jane['lastName'] = 'smith';
+
+
+what is difference between 
+arrays and objects?
+
+what is difference between functions and methods?
+
+
+16. functions which are attached to objects are called as methods.
+
+var john = {
+	firstName: 'John',
+	birthYear: 1990,
+	calcAge : function(birthYear){
+	return 2018 - this.birthYear;
+	}
+}
+
+console.log(john.calcAge());
+
+
+17. JavaScript Versions:
+
+1996: changed from livescript to javascript.
+
+1997: 
+
+2009: ES5(ECMAScript 5) was released with lots of new features.
+
+2015: ES6/ES2015(ECMAScript 2015) was released.
+
+2016/2017/2018/2019/..
+Release of ES2016/ES2017/ES2018/ES2019/..
+
+
+ES5 :supported in all browsers;
+
+ES6,ES7,ES8 - > these are supported in all modern browsers.
+
+no support in older browsers.
+
+transpiling and polyfilling are used to convert to (ES5).
+
+ES9,ES10 are called as ESNext.
+
+
+
+18. JavaScript Engine
+
+parser - abstract syntax tree - conversion to machinde code - machine code - code runs.
+
+19. all javascript code run in an environment which is called as Execution Context(A box, a container, or a wrapper which stores variables and in which a piece of our code is executed and evaluated).
+
+20. The default is Global Execution Context is associated with window object.
+
+21. each function has it's own execution context.
+
+22. Execution context object has, Variable object(VO), scope chain, "This" variable.
+
+23. Difference between the functions and variables is ,functions are already defined before execution phase starts. and variables s are defined only in the execution phase.
+
+24. Execution phase will come after Creation phase.
+
+25. Hoisting: 
+
+26. function scoping:
+
+27. This keyword
+
+28. method borrowing
+
+29. DOM and DOM Manipulation:
+
+DOM : Document Object Model;
+
+Structured representation of an HTML 
+document;
+
+The DOM is used to connect webpages to scripts like JavaScript;
+
+JavaScript and DOM are two different things.
+
+30. Pig Game:
+
+Math is bulit in object in JavaScript
+
+Math.floor() removes the decimal part in nummber.
+
+Math.random() creates the random number between 0 and 1.
+
+//passing Ids or class
+document.querySelector('#score-0') 
+document.querySelector('.player-name').textContent = dice;
+
+textContent is used to place only text.
+innerHTML is used to put some html at that place.
+document.querySelector('.player-name').innerHTML = '<em>'+ dice' +</em>';
+
+
+what is difference between textContent and innerHTML?
+
+//setter
+document.querySelector('#current-' + activPlayer).textContent = dice;
+
+//getter
+var x = document.querySelector('
+#score-0').textContent;
+
+
+//setting display property to none;
+document.querySelector('.dice').style.display = 'none';
+
+-> Events and Event Handlers
+
+document.querySelector('.btn-roll').addEventListener(eventType,function).
+
+events put in Message queue.
+
+callback function:
+function is called by another function.
+
+anonymous function:
+a function doesn't have name and can't be reused is called as anonymous function.
+
+-> Removing and adding classes:
+document.querySelector('.player-0-panel').classList.add('active');
+document.querySelector('.player-1-panel').classList.remove('active');
+document.querySelector('.player-0-panel').classList.toggle('active');
+document.querySelector('.player-1-panel').classList.toggle('active'); 
+
+-> state variables : 
+
+
+30. Primitives: 
+
+Numbers
+Strings
+Booleans
+Undefined
+Null
+
+Everything else
+
+Arrays
+Functions
+Objects
+Dates
+Wrappers and Numbers, Strings, Booleans is an Object.
+
+OOP:
+-> Objects interacting with one another through
+methods and properties;
+
+-> Used to store data, structure applications into modules and keeping code clean.
+
+
+-> Through Constructors we create Instances
+
+-> Inheritane : one object gets access to another object properties.
+
+-> JavaScript is prototype based language, which means inheritance works by using something called protoType.
+
+-> ProtoType chain makes inheritance possible.
+
+-> Every JavaScript object has a prototype property, which makes inheritance possible in JavaScript.
+
+-> The prototype property of an object is where we put methods and properties that we want other objects to inherit;
+
+-> The Constructor's prototype property is NOT the prototype of the Contructor itself. it's the prototype of ALL instances that are created through it;
+
+-> When a certain method(or property) is called, the search starts in the object itself, and if it cannot be found, the search  moves on to the object's   prototype. This continues until the method is found: Prototype chain.
+
+
+-> when we use new  an empty object is created.
+
+
+
+-> splice method on arrays - arr.splice(indexofarray, deletecount , insertelement1,insertelement2)
+
+
+-> // for each element call alert
+["Bilbo", "Gandalf", "Nazgul"].forEach(alert);
+
+-> push, pop, shift, unshift, splice, slice, concat, forEach, find, indexOf, lastIndexOf, includes, find, findIndexOf, filter, map, sort(fn), localCompare, reduce, reduceRight.
+
+find method looks for single element, if it is found returns true otherwise undefined.
+
+findIndexOf method is also same as find method, but small difference is if element is found it returns index of element otherwise it returns -1.
+
+filter - > filter returns matching array of elements
+
+lexiographic ordering.
+
+In sort , we need pass function that sorts the elements.
+by default sort method considers each elements as strings.
+
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <h1>Hello world</h1>
+    <script type="text/javascript">
+        var a = "abcd".split("");
+        var b = "efgh".split("");
+        var c = []
+        for (i = 0; i < a.length; i++) {
+            for (j = 0; j < b.length; j++) {
+                if (i == j) {
+                    c.push(a[i] + b[j]);
+                }
+            }
+        }
+        console.log(c.join(""));
+    </script>
+</body>
+
+</html>
